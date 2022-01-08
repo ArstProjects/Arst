@@ -61,8 +61,9 @@
               <div class="bar"></div>
             </div>
             <ul>
-              <li><a href="index.html" data-after="Home">Home</a></li>
+              <li><a href="" data-after="Home">Home</a></li>
               <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#galery" data-after="Galery">Galery</a></li>
               <li><a href="#project" data-after="Projects">Projects</a></li>
               <li><a href="#contact" data-after="Contact">Contact</a></li>
             </ul>
@@ -80,10 +81,10 @@
       <button id="myBtn" onclick="myFunction()">Pause</button>
     </div>
 
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <div id="about"></div>
-    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br />
 
     <div>
       <h1 class="section-title" data-aos="fade-down" data-aos-duration="1200">About <span>me</span></h1>
@@ -101,12 +102,70 @@
       <h2 class="ID2"></h2>
     </div>
 
-    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div id="galery"></div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- End Projects Section -->
+
+    <!-- Start Galery -->
+
+    <section id="galery">
+      <div class="container">
+        <div class="row text-centrer">
+          <h1 class="section-title" class="section-title" data-aos="fade-down" data-aos-duration="1200">Galery</h1>
+        </div>
+        <br /><br />
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3" data-aos="flip-down" data-aos-delay="100" data-aos-duration="1200">
+            <div class="card">
+              <img src="./img/bg.png" class="card-img-top" alt="galery" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1200">
+            <div class="card">
+              <img src="./img/bg.png" class="card-img-top" alt="galery" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-down" data-aos-delay="400" data-aos-duration="1200">
+            <div class="card">
+              <img src="./img/bg.png" class="card-img-top" alt="galery" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-down" data-aos-delay="600" data-aos-duration="1200">
+            <div class="card">
+              <img src="./img/bg.png" class="card-img-top" alt="galery" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-down" data-aos-delay="800" data-aos-duration="1200">
+            <div class="card">
+              <img src="./img/bg.png" class="card-img-top" alt="galery" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stop Galery -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
     <div id="project"></div>
-    <br /><br /><br /><br /><br />
 
     <!-- Projects Section -->
-    <section id="projects" style="font-size: 15px; overflow: hidden">
+    <section id="projects" style="overflow: hidden">
       <div class="projects container">
         <div class="projects-header">
           <h1 class="section-title" class="section-title" data-aos="fade-down" data-aos-duration="1200">Recent <span>Projects</span></h1>
@@ -180,7 +239,6 @@
         </div>
       </div>
     </section>
-    <!-- End Projects Section -->
 
     <section id="contact">
       <div class="container">
@@ -189,28 +247,28 @@
             <h1 id="about" class="section-title" data-aos="fade-down" data-aos-duration="1200">Contact <span>me</span></h1>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" style="font-size: 1.3rem">
           <div class="col-md-9">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert" style="font-size: 1.8rem">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
               <strong>Terimakasih!</strong> Pesan Anda Sudah Kami Terima.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name="ArstContact">
               <div class="mb-4">
-                <label for="name" class="form-label" style="font-size: 2.5rem" data-aos="fade-right" data-aos-duration="1000">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" style="font-size: 2.1rem" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" />
+                <label for="name" class="form-label" data-aos="fade-right" data-aos-duration="1000">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" />
               </div>
               <div class="mb-4">
-                <label for="email" class="form-label" style="font-size: 2.5rem" data-aos="fade-right" data-aos-duration="2000">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" style="font-size: 2.1rem" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" />
+                <label for="email" class="form-label" data-aos="fade-right" data-aos-duration="2000">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" />
               </div>
-              <div class="mb-3" style="font-size: 2.5rem">
+              <div class="mb-3">
                 <label for="pesan" class="form-label" data-aos="fade-right" data-aos-duration="3000">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan" style="font-size: 2.1rem" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary btn-kirim" style="font-size: 2rem; border-radius: 8px" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="300" data-aos-duration="2000">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim" style="border-radius: 8px" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="300" data-aos-duration="2000">Kirim</button>
 
-              <button style="font-size: 1.8rem; border-radius: 8px" class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <button style="border-radius: 8px" class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-grow spinner-grow-lg" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
