@@ -42,7 +42,7 @@ a {
   height: auto;
 }
 #header .header {
-  min-height: 8vh;
+  min-height: 0.1vh;
   background-color: rgba(31, 30, 30, 0.24);
   transition: 0.3s ease background-color;
 }
@@ -81,7 +81,7 @@ a {
   text-decoration: none;
   color: white;
   text-transform: unset;
-  padding: 20px;
+  padding: 10px;
   display: block;
 }
 #header .nav-list ul a::after {
