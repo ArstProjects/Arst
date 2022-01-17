@@ -24,8 +24,8 @@ menu_item.forEach((item) => {
   });
 });
 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+var video = document.getElementById("pidio");
+var btn = document.getElementById("tombol");
 
 function myFunction() {
   if (video.paused) {
