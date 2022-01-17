@@ -17,12 +17,6 @@ a {
   text-decoration: none;
 }
 
-#footer img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .brand h1 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -32,177 +26,11 @@ a {
   color: crimson;
 }
 
-/* Header section */
-#header {
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: auto;
-}
-#header .header {
-  min-height: 0.1vh;
-  background-color: rgba(31, 30, 30, 0.24);
-  transition: 0.3s ease background-color;
-}
-#header .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  max-width: 1300px;
-  padding: 0 10px;
-}
-#header .nav-list ul {
-  list-style: none;
-  position: absolute;
-  background-color: rgb(31, 30, 30);
-  width: 100vw;
-  height: 100vh;
-  left: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  overflow-x: hidden;
-  transition: 0.5s ease left;
-}
-#header .nav-list ul.active {
-  left: 0%;
-}
-#header .nav-list ul a {
-  font-size: 0.1rem;
-  font-weight: 300;
-  letter-spacing: 0.2rem;
-  text-decoration: none;
-  color: white;
-  text-transform: unset;
-  padding: 10px;
-  display: block;
-}
-#header .nav-list ul a::after {
-  content: attr(data-after);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  color: rgba(240, 248, 255, 0.021);
-  font-size: 10rem;
-  letter-spacing: 50px;
-  z-index: -1;
-  transition: 0.3s ease letter-spacing;
-}
-#header .nav-list ul li:hover a::after {
-  transform: translate(-50%, -50%) scale(1);
-  letter-spacing: initial;
-}
-#header .nav-list ul li:hover a {
-  color: crimson;
-}
-#header .hamburger {
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  border: 3px solid white;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  cursor: pointer;
-  transform: scale(0.8);
-  margin-right: 20px;
-}
-#header .hamburger:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 3px solid white;
-  animation: hamburger_puls 1s ease infinite;
-}
-#header .hamburger .bar {
-  height: 2px;
-  width: 30px;
-  position: relative;
-  background-color: white;
-  z-index: -1;
-}
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-color: white;
-  transition: 0.3s ease;
-  transition-property: top, bottom;
-}
-#header .hamburger .bar::after {
-  top: 8px;
-}
-#header .hamburger .bar::before {
-  bottom: 8px;
-}
-#header .hamburger.active .bar::before {
-  bottom: 0;
-}
-#header .hamburger.active .bar::after {
-  top: 0;
-}
-/* End Header section */
-
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-  /* header */
-  #header .hamburger {
-    display: none;
-  }
-  #header .nav-list ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-  }
-  #header .nav-list ul li {
-    display: inline-block;
-  }
-  #header .nav-list ul li a {
-    font-size: 1.8rem;
-  }
-  #header .nav-list ul a:after {
-    display: none;
-  }
-  /* End header */
-
-  #services .service-bottom .service-item {
-    flex-basis: 22%;
-    margin: 1.5%;
-  }
-}
-/* End  Media Query For Desktop */
-
 table {
   background-color: darkblue;
   width: 15%;
   position: relative;
   left: 1px;
-}
-
-.navbar-brand {
-  color: white;
-  font-family: "Monoton", cursive;
-  font-size: 1.5rem;
-  opacity: 80%;
-  text-shadow: 3px 3px 5px red;
 }
 
 .NoProfile {
@@ -305,19 +133,17 @@ table {
 }
 
 /* STOP BAGIAN SCROLL 
-
 /* Style pada video: 100% lebar dan tinggi untuk menutupi seluruh jendela browser */
-#myVideo {
+#pidio {
   position: relative;
-  right: 0;
-  bottom: 0;
+  padding-top: 4rem;
   min-width: 100%;
   min-height: 100%;
   z-index: 1;
 }
 
 /*Tambahkan beberapa konten di bagian bawah video / halaman */
-.content {
+.konten {
   position: relative;
   bottom: 0;
   color: #f1f1f1;
@@ -329,7 +155,7 @@ table {
 }
 
 /* Style pada button  yang digunakan untuk jeda / memutar video */
-#myBtn {
+#tombol {
   width: 110px;
   font-size: 18px;
   padding: 10px;
@@ -342,7 +168,7 @@ table {
   transition: 1s;
 }
 
-#myBtn:hover {
+#tombol:hover {
   transform: scale(1.1) rotate(3deg);
   background: #ddd;
   color: black;
@@ -361,100 +187,6 @@ table {
 .section-title span {
   color: crimson;
 }
-
-/* Projects section */
-#projects .projects {
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-#projects .projects-header h1 {
-  margin-bottom: 50px;
-}
-#projects .all-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#projects .project-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-#projects .project-info {
-  padding: 30px;
-  flex-basis: 50%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: white;
-}
-#projects .project-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
-}
-#projects .project-info h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
-}
-#projects .project-info p {
-  color: white;
-}
-#projects .project-img {
-  flex-basis: 50%;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-}
-#projects .project-img:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.7;
-}
-#projects .project-img img {
-  transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-  transform: scale(1.1);
-}
-/* End Projects section */
-
-/* Project */
-#projects .project-item {
-  flex-direction: row;
-}
-#projects .project-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-#projects .project-item {
-  height: 400px;
-  margin: 0;
-  width: 100%;
-  border-radius: 0;
-}
-#projects .all-projects .project-info {
-  height: 100%;
-}
-#projects .all-projects .project-img {
-  height: 100%;
-}
-/* End Project */
 
 /* Footer */
 #footer {
