@@ -52,39 +52,47 @@
     </script>
   </head>
   <body>
-    <section id="header">
-      <div class="header containerats">
-        <div class="nav-bar">
-          <div class="brand">
-            <a href="">
-              <h1><span>A</span>rista<span> W</span>iguna</h1>
-            </a>
-          </div>
-          <div class="nav-list">
-            <div class="hamburger">
-              <div class="bar"></div>
-            </div>
-            <ul>
-              <li><a href="" data-after="Home">Home</a></li>
-              <li><a href="#about" data-after="About">About</a></li>
-              <li><a href="#project" data-after="Projects">Projects</a></li>
-              <li><a href="#gameplay" data-after="Gameplay">Gameplay</a></li>
-              <li><a href="#contact" data-after="Contact">Contact</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-image: linear-gradient(60deg, #485563 0%, #29323c 100%); font-size: 1.4rem">
+      <div class="container">
+        <div class="brand">
+          <h1><span>A</span>rista <span>W</span>iguna</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gameplay">Gameplay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
+
     <!-- Videonya -->
-    <video autoplay muted loop id="myVideo">
-      <source src="https://www.dropbox.com/s/wcnfif5rfblm48j/err.mp4?raw=1" type="video/mp4" />
+    <video autoplay muted loop id="pidio">
+      <source src="https://www.dropbox.com/s/bjgcwbyri6937hz/error.mp4?raw=1" type="video/mp4" />
       Browsermu tidak mendukung video HTML5.
     </video>
 
-    <div class="content">
-      <button id="myBtn" onclick="myFunction()">Pause</button>
+    <!--tombol pause
+    <div class="konten">
+      <button id="tombol" onclick="myFunction()">Pause</button>
     </div>
-
+    -->
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <div id="about"></div>
