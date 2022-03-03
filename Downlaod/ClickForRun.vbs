@@ -21,7 +21,7 @@ siteA = "https://youtu.be/iik25wqIuFo"
 Const OneSecond = 50
 Set browobj = CreateObject("Wscript.Shell")
 browobj.Run "chrome -url "&siteA
-WScript.Sleep OneSecond*1,
+WScript.Sleep OneSecond*1
 browobj.Run "chrome -url "&siteA
 WScript.Sleep OneSecond*1
 browobj.Run "chrome -url "&siteA
