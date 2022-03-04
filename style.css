@@ -17,14 +17,47 @@ a {
   text-decoration: none;
 }
 
+.loader {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.loader > div {
+  height: 100px;
+  width: 100px;
+  border: 15px solid rgb(95, 95, 100);
+  border-bottom-color: red;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ScRipTArst {
+  display: none;
+}
 .brand h1 {
   font-size: 2rem;
   text-transform: uppercase;
   color: white;
-  cursor: none;
+  cursor: default;
 }
 .brand h1 span {
   color: crimson;
+  cursor: default;
 }
 
 .NoProfile {
@@ -105,6 +138,7 @@ a {
 }
 
 .section-title {
+  cursor: default;
   font-size: 2.8rem;
   font-weight: 300;
   color: black;
@@ -129,4 +163,21 @@ a {
   width: 50%;
   display: flex;
   align-items: center;
+}
+
+.nav-item,
+.brand,
+h1,
+.NoProfile,
+.ID,
+.ID2,
+.slide-right,
+.section-title,
+.Contact {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
