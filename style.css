@@ -60,52 +60,16 @@ a {
   cursor: default;
 }
 
-.NoProfile {
-  margin-left: 40px;
-  margin-top: 10px;
-}
-
-.ID {
-  float: left;
-  font-family: "Shizuru", cursive;
-  font-size: 1.5rem;
-  margin-top: -400px;
-  margin-left: 300px;
-  color: black;
-}
-
 .ID2 {
   font-family: "Merriweather", serif;
-  float: left;
   font-size: 1.4rem;
-  margin-top: -370px;
-  margin-left: 298px;
   color: black;
-}
-
-.slide-right {
-  width: 100%;
-  overflow: hidden;
-  margin-left: 10px;
-  max-width: 400px;
 }
 
 .slide-right .Txt1 {
   color: whitesmoke;
   font-size: 30px;
-  animation: 3s slide-right;
-  animation-delay: 0s;
   text-shadow: 4px 4px 5px red;
-}
-
-@keyframes slide-right {
-  from {
-    margin-left: -500px;
-  }
-
-  to {
-    margin-left: 0%;
-  }
 }
 
 /* START BAGIAN SCROLL 
