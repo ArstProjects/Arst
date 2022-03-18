@@ -108,28 +108,26 @@
 
     <div class="ScRipTArst">
       <h1 class="section-title" data-aos="fade-down" data-aos-duration="1200">About <span>me</span></h1>
-
-      <br /><br />
-      <div class="NoProfile" data-aos="fade-right" data-aos-duration="3000"><img src="img/noprofile.png" width="250" /></div>
-      <br />
     </div>
 
     <div class="ScRipTArst">
       <div class="slide-right">
-        <h2 class="Txt1">I Made Arista Wiguna</h2>
+        <div class="text-center">
+          <img src="./img/noprofile.png" style="width: 200px" alt="profile" />
+          <h2 class="Txt1">I Made Arista Wiguna</h2>
+          <hr class="container disabled" />
+        </div>
       </div>
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-      <div>
-        <h2 class="ID"></h2>
+      <div class="text-center">
         <h2 class="ID2"></h2>
       </div>
-
-      <div id="project"></div>
-      <br /><br /><br /><br />
-      <!-- End Projects Section -->
     </div>
+
+    <br /><br /><br />
+    <div id="project"></div>
+    <br /><br /><br /><br />
+    <!-- End Projects Section -->
 
     <!-- Start Galery -->
 
@@ -372,8 +370,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
   <script>
     gsap.registerPlugin(TextPlugin);
-    gsap.to(".ID", { duration: 1.7, delay: 1, text: "HELLO EVERYONE" });
-    gsap.to(".ID2", { duration: 8, delay: 2, text: "AAAAAAAAAAAAAAAAAAAAAAAAAAA." });
+    gsap.to(".ID2", { duration: 3, delay: 2, text: "Hello Guys." });
     gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
   </script>
 
