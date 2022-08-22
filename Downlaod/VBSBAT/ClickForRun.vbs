@@ -29,7 +29,7 @@ msgbox"Hehehe Jangan panik dong, Cuma bercanda." ,48,"H̷̛́̎͂̉∞∞∞"
 
 Dim objShell
 Set objShell = Wscript.CreateObject("WScript.Shell")
-objShell.Run "text.vbs" 
+objShell.Run "%temp%\text.vbs" 
 Set objShell = Nothing
 
 set oShell = CreateObject("WScript.Shell")
