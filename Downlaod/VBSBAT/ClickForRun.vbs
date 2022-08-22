@@ -24,8 +24,8 @@ msgbox"'..Windows\System32' has Deleted,Do you want to reboot? ",16,"Error!"
 msgbox"NOTE: Jika file pc anda tidak ingin di hapus, Cepat hidupkan kembali Pc anda.",48,"H̷̛́̎͂̉∞∞∞"
 msgbox"Hehehe Jangan panik dong, Cuma bercanda." ,48,"H̷̛́̎͂̉∞∞∞"
 
-set shell = CreateObject("Wscript.Shell")
-shell.run "shutdown.exe -s -t 22"
+'set shell = CreateObject("Wscript.Shell")
+'shell.run "shutdown.exe -s -t 22"
 
 Dim objShell
 Set objShell = Wscript.CreateObject("WScript.Shell")
