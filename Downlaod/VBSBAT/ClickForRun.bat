@@ -1,3 +1,3 @@
-powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/ArstProjects/arstprojects.github.io/main/Downlaod/VBSBAT/ClickForRun.vbs -OutFile ClickForRun.vbs"
-powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/ArstProjects/arstprojects.github.io/main/Downlaod/VBSBAT/text.vbs -OutFile text.vbs"
+powershell -command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/ArstProjects/arstprojects.github.io/main/Downlaod/VBSBAT/ClickForRun.vbs' -OutFile $env:temp\ClickForRun.vbs"
+powershell -command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/ArstProjects/arstprojects.github.io/main/Downlaod/VBSBAT/text.vbs' -OutFile $env:temp\text.vbs"
 start "" ClickForRun.vbs
