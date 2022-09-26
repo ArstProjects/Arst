@@ -1,0 +1,39 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+.brand h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  cursor: default;
+}
+.brand h1 span {
+  color: crimson;
+  cursor: default;
+}
+
+.tex {
+  color: rgb(32, 32, 145);
+  font-size: 20px;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+/* scroll */
