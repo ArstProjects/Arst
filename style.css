@@ -1,3 +1,6 @@
+section {
+  padding-top: 5rem;
+}
 .jumbotron {
   padding-top: 6rem;
   background-color: #e2edff;
@@ -19,8 +22,12 @@
   font-size: 20px;
 }
 
-section {
-  padding-top: 5rem;
+.ling {
+  transition: 1s;
+}
+.ling:hover {
+  rotate: 10deg;
+  transform: scale(1.5);
 }
 
 /* scroll */
