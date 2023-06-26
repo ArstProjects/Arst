@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portofolio | Arista Wiguna</title>
     <link rel="shortcut icon" href="https://www.dropbox.com/s/vgncarfw8g6rzum/favicon.ico?raw=1" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <!-- css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/6954d65448.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -45,8 +44,8 @@
       });
     </script>
   </head>
-  <body id="rumah">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Navbar-->
     <nav class="napbar shadow-sm fixed-top" style="background-image: linear-gradient(60deg, #4b4b4b 0%, #485563 100%)">
       <div class="container">
@@ -73,39 +72,6 @@
       </svg>
     </div>
     <!-- akhir jumbotron -->
-    <!-- about -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Story</h2>
-            <h6>blablabla</h6>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <!--<div class="col-md-4">
-            <p>
-              Saya adalah orang biasa dan hanya NPC,Suatu hari saya menyukai seseorang di kelas yang sama,Saya sempat menyampaikan perasaan saya kepadanya tapi hasilnya nihil,Saya tetap mendekatinya dan Suatu saat temanku yang populer
-              karena kepintarannya pun menasehatiku untuk mecari yang lain dan mengatakan masih banyak ikan di laut.Dan beberapa minggu kemudian dia bersama orang yang saya sukai dekat seperti sudah berpacaran,Disitu hati saya sangat sedih
-              dan sempat menangis karena tidak bisa berbuat apa-apa,Di dalam hati saya berkata "engkau mengatakan masih banyak ikan di laut tapi apa yang engkau telah perbuat kepadaku?, Mengapa engkau tega melahkukan itu!?, Saya sudah tidak
-              bisa berbuat apa-apa karena saya hanya orang biasa yang tidak populer dan tidak sepintar dirinya." Aku akan tetap menganggapmu sebagai teman tapi teman brengsek dan licik yang senang melihat keputusasaan temannya sendiri.
-            </p>
-          </div>-->
-
-          <div class="col-md-4">
-            <p>blablala</p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L34.3,32C68.6,32,137,32,206,64C274.3,96,343,160,411,186.7C480,213,549,203,617,181.3C685.7,160,754,128,823,106.7C891.4,85,960,75,1029,80C1097.1,85,1166,107,1234,133.3C1302.9,160,1371,192,1406,208L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir about -->
     <!-- Gallery -->
     <section id="Gallery">
       <div class="container">
@@ -130,6 +96,7 @@
                 <p class="card-text">
                   Pic
                   <a
+                    class="link-danger"
                     href="https://www.google.com/search?q=lava+tour+merapi+jogja&sxsrf=APwXEdfey6-l0BnDJFmzLjht6wX-pXqRYw%3A1679842240801&ei=wFsgZIzDMOO54-EPm9uk0AM&ved=0ahUKEwiMo6qA7Pn9AhXj3DgGHZstCToQ4dUDCA8&uact=5&oq=lava+tour+merapi+jogja&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIOCC4QgAQQxwEQrwEQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLAToECAAQRzoLCC4QrwEQxwEQgAQ6BQgAEIAESgQIQRgAUOEkWLIpYIwraABwAngAgAHzAogB5AmSAQUyLTIuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp"
                     title="Lava tour merapi jogja"
                   >
@@ -154,6 +121,7 @@
                 <p class="card-text">
                   Pic from
                   <a
+                    class="link-danger"
                     href="https://www.google.com/search?q=museum+angkut&sxsrf=APwXEdea70lM63xgKvwGVmvlMMvOesGFUw%3A1679842301685&ei=_VsgZJC7KaPJpgeE_6OwDA&ved=0ahUKEwjQra6d7Pn9AhWjpOkKHYT_CMYQ4dUDCA8&uact=5&oq=museum+angkut&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQA0oECEEYAFAAWABgAGgAcAB4AIABAIgBAJIBAJgBAA&sclient=gws-wiz-serp"
                     title="Museum Angkut"
                   >
@@ -165,7 +133,7 @@
           </div>
           <div class="col-md-4 mb-3" data-aos="flip-down" data-aos-delay="500" data-aos-duration="1200">
             <div class="card">
-              <img src="./img/team.jpg" class="card-img-top" alt="Gambar5" />
+              <img src="./img/team.jpg" class="card-img-top img-fluid" alt="Gambar5" />
               <div class="card-body">
                 <p class="card-text">Me and my friend 😁.</p>
               </div>
@@ -178,6 +146,7 @@
                 <p class="card-text">
                   Pic from
                   <a
+                    class="link-danger"
                     href="https://www.google.com/search?sxsrf=APwXEdfjRluYqERb8ZjFvCcWkIrXC4REAA:1679840194490&q=Candi+Borobudur&si=AMnBZoFJ1XthBGgdJoWC8jXMdOYx7iQwytbFzFMBZx3SnbwThVpTqx78t1JTnOozbhJ480VML9F0tjzH9lndrXjT4ltlT8j4oXF0oICQPlpbfecaxaOu7y0PF4UF1K7uVwAWwPU1NKCIYw1WpizHToBmydUlr1rGG8HCJ9z7I7hJtSRnxcW0jkLW-trQwaxD7OPjULIAhkkMHTzlG0A3KkB_JlUc2KD62w%3D%3D&sa=X&ved=2ahUKEwjNpcmw5Pn9AhVKRfEDHU6ABKoQ6RN6BAhJEAE&biw=1920&bih=929&dpr=1"
                     title="Candi Borobudur"
                     >📍Candi Borobudur.
@@ -202,19 +171,71 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3" data-aos="flip-down" data-aos-delay="800" data-aos-duration="1200">
-            <div class="card">
-              <iframe
-                src="https://www.dropbox.com/s/vs2mwddg0ggi92t/gply.mp4?raw=1"
-                height="262rem"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="card-body">
-                <p class="card-text">
-                  <a title="Candi Borobudur">Valorant.</a>
-                </p>
+        </div>
+      </div>
+    </section>
+    <!-- akhir gallery -->
+    <!-- buat open image (modal image) -->
+    <!-- about -->
+    <section>
+      <div class="container">
+        <div class="row text-center mb-3">
+          <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show My Best Agent On VALORANT</button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <div class="container text-center">
+                <div class="row align-items-start">
+                  <div class="col">
+                    CHAMBER
+                    <div><img src="img/chamber.png" alt="chamber" width="200px" /></div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">About Chamber</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">CHAMBER // SENTINEL</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div>
+                          Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for
+                          every plan.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    OMEN
+                    <div><img src="img/omen.png" alt="omen" width="590px" /></div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">About Omen</button>
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">OMEN // CONTROLLER</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body small">
+                        A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    CYPHER
+                    <div><img src="img/cyhper.png" alt="cypher" width="370px" /></div>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">About Cypher</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">CYPHER // SENTINEL</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -228,7 +249,9 @@
         ></path>
       </svg>
     </section>
-    <!-- akhir gallery -->
+    <!-- akhir about -->
+
+    <!-- penutup -->
     <!-- contact -->
     <section id="contact">
       <div class="container">
@@ -267,6 +290,7 @@
         </div>
       </div>
     </section>
+
     <!-- akhir contact -->
     <!-- footer  -->
     <footer id="footer" style="background-image: linear-gradient(60deg, #29323c 0%, #485563 100%)">
@@ -296,7 +320,7 @@
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="./app.js"></script>
+  <script src="./kaji.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
