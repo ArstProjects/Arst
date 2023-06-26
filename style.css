@@ -31,6 +31,28 @@ section {
   font-size: 20px;
 }
 
+.agentname {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+.agen {
+  transition: 1s;
+}
+
+.agen:hover {
+  transform: scale(1.04);
+}
+
+.bodyValo {
+  background-color: aquamarine;
+}
+
+.KOPI {
+  cursor: pointer;
+}
+
 .ling {
   transition: 1s;
 }
