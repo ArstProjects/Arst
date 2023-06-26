@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portofolio | Arista Wiguna</title>
     <link rel="shortcut icon" href="https://www.dropbox.com/s/vgncarfw8g6rzum/favicon.ico?raw=1" type="image/x-icon" />
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- AOS -->
@@ -14,12 +17,9 @@
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/6954d65448.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
     <script id="chatBroEmbedCode">
-      /* Chatbro Widget Embed Code Start */
-      function ChatbroLoader(chats, async) {
+      /* Chatbro Widget Embed Code Start */ function ChatbroLoader(chats, async) {
         async = !1 !== async;
         var params = {
             embedChatsParameters: chats instanceof Array ? chats : [chats],
@@ -36,16 +36,13 @@
           (xhr.onerror = function () {
             console.error("Chatbro loading error");
           }),
-          xhr.open("GET", "//www.chatbro.com/embed.js?" + btoa(unescape(encodeURIComponent(JSON.stringify(params)))), async),
+          xhr.open("GET", "https://www.chatbro.com/embed.js?" + btoa(unescape(encodeURIComponent(JSON.stringify(params)))), async),
           xhr.send();
       }
-      /* Chatbro Widget Embed Code End */ ChatbroLoader({
-        encodedChatId: "98nLk",
-      });
+      /* Chatbro Widget Embed Code End */ ChatbroLoader({ encodedChatId: "88u4Z" });
     </script>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Navbar-->
     <nav class="napbar shadow-sm fixed-top" style="background-image: linear-gradient(60deg, #4b4b4b 0%, #485563 100%)">
       <div class="container">
@@ -60,7 +57,7 @@
     <div class="jumbotron text-center">
       <img src="img/siuus.jpg" alt="Arista Wiguna" width="200" class="rounded-circle img-thumbnail" data-aos="flip-up" data-aos-duration="1200" data-aos-delay="3200" />
       <h1 class="NamaPanjang"></h1>
-      <p class="lead" data-aos="fade-up" data-aos-duration="1200">Middle School | IX-11</p>
+      <p class="lead" data-aos="fade-up" data-aos-duration="1200">High School | X-RPL3</p>
       <h2 class="tex" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">2008.07.20</h2>
       <strong data-aos="fade-up" data-aos-delay="1300">*THIS SITE DOES NOT SUPPORT BEING OPENED ON PHONE!!!</strong>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -180,24 +177,51 @@
     <section>
       <div class="container">
         <div class="row text-center mb-3">
+          <div class="col">
+            <h2 class="section-title" data-aos="fade-down" data-aos-duration="1200">My Games</h2>
+            <br />
+          </div>
           <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Show My Best Agent On VALORANT</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ShowSpending" aria-expanded="false" aria-controls="ShowSpending">
+              <i class="bi bi-arrow-90deg-down">My Best Agent On VALORANT</i>
+            </button>
           </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              <div class="container text-center">
+          <div class="collapse" id="ShowSpending">
+            <div class="card card-body bodyValo">
+              <div>
+                <h5 class="text-start" style="color: rgb(255, 0, 157)">VALORANT ID : ArstWgn#Arst <i onclick="copyText()" class="bi bi-clipboard KOPI"></i> / MelloWgn#Mello <i onclick="copyText2()" class="bi bi-clipboard KOPI"></i></h5>
+                <br />
+
+                <br />
+                <script>
+                  function copyText() {
+                    /* Copy text into clipboard */
+                    navigator.clipboard.writeText("ArstWgn#Arst");
+                  }
+                  function copyText2() {
+                    navigator.clipboard.writeText("MelloWgn#Mello");
+                  }
+                </script>
+              </div>
+              <div class="container">
                 <div class="row align-items-start">
                   <div class="col">
-                    CHAMBER
-                    <div><img src="img/chamber.png" alt="chamber" width="200px" /></div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">About Chamber</button>
+                    <div class="agen">
+                      <br />
+                      <h2 class="agentname">
+                        <a href="https://playvalorant.com/en-gb/agents/chamber/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> <i class="bi bi-link">CHAMBER</i></a>
+                      </h2>
+                      <div><img src="img/chamber.png" class="agen" alt="chamber" width="200px" /></div>
+                      <br />
+                    </div>
+                    <button class="btn btn-warning btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Biography Chamber</button>
 
                     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                       <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="staticBackdropLabel">CHAMBER // SENTINEL</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
-                      <div class="offcanvas-body">
+                      <div class="offcanvas-body text-start">
                         <div>
                           Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for
                           every plan.
@@ -206,32 +230,44 @@
                     </div>
                   </div>
                   <div class="col">
-                    OMEN
-                    <div><img src="img/omen.png" alt="omen" width="590px" /></div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">About Omen</button>
-                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                    <div class="agen">
+                      <br />
+                      <h2 class="agentname">
+                        <a href="https://playvalorant.com/en-gb/agents/omen/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-link">OMEN</i></a>
+                      </h2>
+                      <div><img src="img/omen.png" class="agen" alt="omen" width="354px" /></div>
+                      <br />
+                    </div>
+                    <button class="btn btn-warning btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop2" aria-controls="staticBackdrop2">Biography Omen</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop2" aria-labelledby="staticBackdropLabel">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">OMEN // CONTROLLER</h5>
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">OMEN // CONTROLLER</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
-                      <div class="offcanvas-body small">
-                        A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.
+                      <div class="offcanvas-body text-start">
+                        <div>A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.</div>
                       </div>
                     </div>
                   </div>
-
                   <div class="col">
-                    CYPHER
-                    <div><img src="img/cyhper.png" alt="cypher" width="370px" /></div>
+                    <div class="agen">
+                      <br />
+                      <h2 class="agentname">
+                        <a href="https://playvalorant.com/en-gb/agents/cypher/" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-link">CYPHER</i></a>
+                      </h2>
+                      <div><img src="img/cyhper.png" class="agen" alt="cyhper" width="296px" /></div>
+                      <br />
+                    </div>
+                    <button class="btn btn-warning btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop3" aria-controls="staticBackdrop3">Biography Cypher</button>
 
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">About Cypher</button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop3" aria-labelledby="staticBackdropLabel">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">CYPHER // SENTINEL</h5>
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">CYPHER // SENTINEL</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
-                      <div class="offcanvas-body">
-                        The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.
+                      <div class="offcanvas-body text-start">
+                        <div>The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy's every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.</div>
                       </div>
                     </div>
                   </div>
@@ -241,16 +277,8 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L34.3,32C68.6,32,137,32,206,64C274.3,96,343,160,411,186.7C480,213,549,203,617,181.3C685.7,160,754,128,823,106.7C891.4,85,960,75,1029,80C1097.1,85,1166,107,1234,133.3C1302.9,160,1371,192,1406,208L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- akhir about -->
-
     <!-- penutup -->
     <!-- contact -->
     <section id="contact">
@@ -302,9 +330,9 @@
         <div class="border-top border-light">
           <p class="text-center text-light mb-3">©2022 Arista<i class="bi bi-heart-fill text-danger"></i>Yourself.</p>
           <div class="col-md-15 text-center text-md-right pb-3">
-            <a href="https://github.com/arstproject" class="h2 mx-1 text-secondary" title="Github"><i class="fab fa-github ling"></i></a>
+            <a href="https://github.com/arstprojects" class="h2 mx-1 text-secondary" title="Github"><i class="fab fa-github ling"></i></a>
             <a href="https://www.instagram.com/arista_wiguna.2/" class="h2 mx-1 text-secondary" title="Instagram"><i class="fab fa-instagram ling"></i></a>
-            <a href="" class="h2 mx-1 text-secondary" title="Discord"><i class="fab fa-discord ling"></i></a>
+            <a href="https://discordapp.com/users/686945054652235926" class="h2 mx-1 text-secondary" title="Discord"><i class="fab fa-discord ling"></i></a>
             <a href="https://www.youtube.com/channel/UCmkXSY4bl0gWev3KZYqMq0w" class="h2 mx-1 text-secondary" title="Youtube"><i class="fab fa-youtube ling"></i></a>
             <br />
             <div style="color: white">
@@ -319,7 +347,6 @@
     <!-- akhir footer -->
   </body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="./kaji.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
