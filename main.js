@@ -4,7 +4,7 @@ const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootst
 const myToast = new bootstrap.Toast(".toast");
 setTimeout(() => {
   myToast.show();
-}, 1000);
+});
 
 function copyText() {
   /* Copy text into clipboard */
