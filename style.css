@@ -12,6 +12,10 @@ section {
   background: none;
 }
 
+img {
+  pointer-events: none;
+}
+
 .jumbotron {
   padding-top: 3.4rem;
   background-color: #e2edff;
