@@ -1,0 +1,147 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+::selection {
+  color: none;
+  background: none;
+}
+::-moz-selection {
+  color: none;
+  background: none;
+}
+
+.jumbotron {
+  padding-top: 3.4rem;
+  animation: gradiasiwarna 10s infinite;
+}
+
+@keyframes gradiasiwarna {
+  0% {
+    background-color: #5495ff;
+  }
+  25% {
+    background-color: #6aa3ff;
+  }
+  50% {
+    background-color: #a3c6ff;
+  }
+  75% {
+    background-color: #6aa3ff;
+  }
+  100% {
+    background-color: #5495ff;
+  }
+}
+
+.brand h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  cursor: default;
+}
+.brand1 h1 {
+  font-size: 1.5rem;
+  color: white;
+  cursor: default;
+}
+.brand h1 span {
+  color: crimson;
+  cursor: default;
+}
+.brand1 h1 span {
+  color: crimson;
+  cursor: default;
+}
+
+.tex {
+  color: rgb(32, 32, 145);
+  font-size: 20px;
+}
+
+.agentname {
+  background-color: #343434;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.agen {
+  transition: 1s;
+}
+
+.agen:hover {
+  transform: scale(1.04);
+}
+.agentname {
+  transition: 1s;
+}
+
+.agentname:hover {
+  transform: scale(1.02);
+}
+
+.bodyValo {
+  background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+  border-radius: 20px;
+}
+
+.KOPI {
+  cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
+.gallery-item {
+  cursor: zoom-in;
+}
+
+.cardgallery {
+  transition: all 0.3s;
+}
+.cardgallery:hover {
+  transform: scale(1.055);
+}
+
+.divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: "";
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.ling {
+  transition: 1s;
+}
+.ling:hover {
+  rotate: 5deg;
+  transform: scale(1.2);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+/* scroll */
