@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   color: black;
@@ -7,18 +13,23 @@ section {
   padding-top: 5rem;
 }
 
-::selection {
-  color: none;
-  background: none;
+.np1 {
+  overflow: hidden;
+  margin: 23px;
+  position: fixed;
+  padding: 11px;
+  border-radius: 40px;
+  box-shadow: 0 0px 14px -7px #065158;
+  z-index: 4;
 }
-::-moz-selection {
-  color: none;
-  background: none;
+
+.np1 a {
+  margin-left: 10px;
 }
 
 .jumbotron {
-  padding-top: 3.4rem;
-  animation: gradiasiwarna 10s infinite;
+  padding-top: 3rem;
+  animation: gradiasiwarna 7s infinite;
 }
 
 @keyframes gradiasiwarna {
@@ -40,7 +51,7 @@ section {
 }
 
 .brand h1 {
-  font-size: 2rem;
+  font-size: 1.89rem;
   text-transform: uppercase;
   color: white;
   cursor: default;
@@ -86,7 +97,12 @@ section {
 }
 
 .bodyValo {
-  background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+  background: linear-gradient(
+    135deg,
+    rgb(255, 51, 66) 0%,
+    rgb(255, 48, 64) 0.01%,
+    rgb(255, 125, 102) 100%
+  );
   border-radius: 20px;
 }
 
@@ -119,6 +135,20 @@ section {
 .divider::after {
   flex: 1;
   content: "";
+  margin: 10px;
+  padding: 2px;
+}
+
+.divider2 {
+  display: flex;
+  align-items: center;
+}
+
+.divider2::before,
+.divider2::after {
+  flex: 1;
+  content: "";
+  margin: 5px;
   padding: 2px;
   background-color: rgb(255, 255, 255);
 }
@@ -129,6 +159,60 @@ section {
 .ling:hover {
   rotate: 5deg;
   transform: scale(1.2);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.anjay {
+  position: relative;
+}
+
+.anjay h2 {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.anjay h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #03a9f4;
+}
+
+.anjay h2:nth-child(2) {
+  color: #03c0f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
 }
 
 /* scroll */
@@ -144,4 +228,3 @@ section {
   background: red;
   border-radius: 10px;
 }
-/* scroll */
