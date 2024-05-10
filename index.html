@@ -24,7 +24,7 @@
     ></script>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -88,7 +88,9 @@
               <a class="nav-link bi bi-images" href="#gallery"> | gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link bi bi-controller" href="games.html"> | games</a>
+              <a class="nav-link bi bi-controller" href="games.html">
+                | games</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link bi bi-envelope-open" href="#contact">
@@ -157,7 +159,15 @@
       </p>
 
       <strong data-aos="fade-up" data-aos-delay="1300" style="color: red"
-        >*UPDATED SITE ON 27/06/2023</strong
+        >*PREVIOUS UPDATE ON 27/06/2023</strong
+      >
+      <div></div>
+      <strong
+        data-aos="fade-up"
+        data-aos-delay="1300"
+        style="color: rgb(118, 255, 102)"
+      >
+        LATEST UPDATE 10/05/2024</strong
       >
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -171,7 +181,7 @@
     <!-- akhir jumbotron -->
 
     <!-- Gallery -->
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="Gallery">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
@@ -184,153 +194,231 @@
             </h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-center">
           <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="100"
-            data-aos-duration="1200"
+            class="col-3 text-center selectg1"
+            style="cursor: pointer; font-size: 3rem"
           >
-            <div class="card cardgallery">
-              <img
-                src="./img/geng.jpg"
-                class="card-img-top gallery-item"
-                alt="Gambar1"
-              />
-              <div class="card-body">
-                <p class="card-text">Riding friend.</p>
+            <i class="bi bi-phone" onclick="toggleImages(1)"><h5>PHONE</h5></i>
+          </div>
+          <div
+            class="col-3 text-center selectg2"
+            style="cursor: pointer; font-size: 3rem"
+          >
+            <i class="bi bi-camera2" onclick="toggleImages(2)"
+              ><h5>CAMERA</h5></i
+            >
+          </div>
+        </div>
+        <br /><br />
+        <div class="img-box bx1" id="img-box-1">
+          <div class="row justify-content-center">
+            <h3>Using Phone : Galaxy S21 FE</h3>
+            <i class="bi bi-arrow-down-short" style="font-size: 3rem"></i>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/geng.jpg"
+                  class="card-img-top gallery-item"
+                  alt="Gambar1"
+                />
+                <div class="card-body">
+                  <p class="card-text">Riding friend.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/TOUR.JPG"
+                  class="card-img-top gallery-item"
+                  alt="Gambar3"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Pic
+                    <a
+                      class="link-danger"
+                      href="https://www.google.com/search?q=lava+tour+merapi+jogja&sxsrf=APwXEdfey6-l0BnDJFmzLjht6wX-pXqRYw%3A1679842240801&ei=wFsgZIzDMOO54-EPm9uk0AM&ved=0ahUKEwiMo6qA7Pn9AhXj3DgGHZstCToQ4dUDCA8&uact=5&oq=lava+tour+merapi+jogja&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIOCC4QgAQQxwEQrwEQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLAToECAAQRzoLCC4QrwEQxwEQgAQ6BQgAEIAESgQIQRgAUOEkWLIpYIwraABwAngAgAHzAogB5AmSAQUyLTIuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp"
+                      title="Lava tour merapi jogja"
+                    >
+                      📍Lava Tour Merapi Jogja</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/gta.png"
+                  class="card-img-top gallery-item"
+                  alt="gallery"
+                />
+                <div class="card-body">
+                  <p class="card-text">Modding GTAV Indonesian police.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/musiumakt.jpg"
+                  class="card-img-top gallery-item"
+                  alt="Gambar4"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Pic from
+                    <a
+                      class="link-danger"
+                      href="https://www.google.com/search?q=museum+angkut&sxsrf=APwXEdea70lM63xgKvwGVmvlMMvOesGFUw%3A1679842301685&ei=_VsgZJC7KaPJpgeE_6OwDA&ved=0ahUKEwjQra6d7Pn9AhWjpOkKHYT_CMYQ4dUDCA8&uact=5&oq=museum+angkut&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQA0oECEEYAFAAWABgAGgAcAB4AIABAIgBAJIBAJgBAA&sclient=gws-wiz-serp"
+                      title="Museum Angkut"
+                    >
+                      📍Museum Angkut</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/team.jpg"
+                  class="card-img-top img-fluid gallery-item"
+                  alt="Gambar5"
+                />
+                <div class="card-body">
+                  <p class="card-text">Me and my friend 😁.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/borobudur.jpg"
+                  class="card-img-top gallery-item"
+                  alt="Gambar5"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    Pic from
+                    <a
+                      class="link-danger"
+                      href="https://www.google.com/search?sxsrf=APwXEdfjRluYqERb8ZjFvCcWkIrXC4REAA:1679840194490&q=Candi+Borobudur&si=AMnBZoFJ1XthBGgdJoWC8jXMdOYx7iQwytbFzFMBZx3SnbwThVpTqx78t1JTnOozbhJ480VML9F0tjzH9lndrXjT4ltlT8j4oXF0oICQPlpbfecaxaOu7y0PF4UF1K7uVwAWwPU1NKCIYw1WpizHToBmydUlr1rGG8HCJ9z7I7hJtSRnxcW0jkLW-trQwaxD7OPjULIAhkkMHTzlG0A3KkB_JlUc2KD62w%3D%3D&sa=X&ved=2ahUKEwjNpcmw5Pn9AhVKRfEDHU6ABKoQ6RN6BAhJEAE&biw=1920&bih=929&dpr=1"
+                      title="Candi Borobudur"
+                      >📍Candi Borobudur.
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <iframe
+                  src="https://www.youtube.com/embed/chwcxlLueTs"
+                  height="175rem"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+                <div class="card-body">
+                  <p class="card-text">
+                    <a title="Candi Borobudur"
+                      >Estetek gabut bts tugas video.</a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="200"
-            data-aos-duration="1200"
-          >
-            <div class="card cardgallery">
-              <img
-                src="./img/TOUR.JPG"
-                class="card-img-top gallery-item"
-                alt="Gambar3"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Pic
-                  <a
-                    class="link-danger"
-                    href="https://www.google.com/search?q=lava+tour+merapi+jogja&sxsrf=APwXEdfey6-l0BnDJFmzLjht6wX-pXqRYw%3A1679842240801&ei=wFsgZIzDMOO54-EPm9uk0AM&ved=0ahUKEwiMo6qA7Pn9AhXj3DgGHZstCToQ4dUDCA8&uact=5&oq=lava+tour+merapi+jogja&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIOCC4QgAQQxwEQrwEQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLATIICAAQgAQQywEyCAgAEIAEEMsBMggIABCABBDLAToECAAQRzoLCC4QrwEQxwEQgAQ6BQgAEIAESgQIQRgAUOEkWLIpYIwraABwAngAgAHzAogB5AmSAQUyLTIuMpgBAKABAcgBCMABAQ&sclient=gws-wiz-serp"
-                    title="Lava tour merapi jogja"
-                  >
-                    📍Lava Tour Merapi Jogja</a
-                  >
-                </p>
+        </div>
+        <div class="img-box bx2" id="img-box-2">
+          <div class="row justify-content-center">
+            <h3>Using Camera : Sony A6400 KIT LENS</h3>
+            <i class="bi bi-arrow-down-short" style="font-size: 3rem"></i>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam2.jpg"
+                  class="card-img-top gallery-item"
+                  alt="Gambar1"
+                />
+                <div class="card-body">
+                  <p class="card-text">nr.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div class="card cardgallery">
-              <img
-                src="./img/gta.png"
-                class="card-img-top gallery-item"
-                alt="gallery"
-              />
-              <div class="card-body">
-                <p class="card-text">Modding GTAV Indonesian police.</p>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam4.jpg"
+                  class="card-img-top gallery-item"
+                  alt="Gambar3"
+                />
+                <div class="card-body">
+                  <p class="card-text">Phone & Watch.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="400"
-            data-aos-duration="1200"
-          >
-            <div class="card cardgallery">
-              <img
-                src="./img/musiumakt.jpg"
-                class="card-img-top gallery-item"
-                alt="Gambar4"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Pic from
-                  <a
-                    class="link-danger"
-                    href="https://www.google.com/search?q=museum+angkut&sxsrf=APwXEdea70lM63xgKvwGVmvlMMvOesGFUw%3A1679842301685&ei=_VsgZJC7KaPJpgeE_6OwDA&ved=0ahUKEwjQra6d7Pn9AhWjpOkKHYT_CMYQ4dUDCA8&uact=5&oq=museum+angkut&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQA0oECEEYAFAAWABgAGgAcAB4AIABAIgBAJIBAJgBAA&sclient=gws-wiz-serp"
-                    title="Museum Angkut"
-                  >
-                    📍Museum Angkut</a
-                  >
-                </p>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam5.JPG"
+                  class="card-img-top gallery-item"
+                  alt="gallery"
+                />
+                <div class="card-body">
+                  <p class="card-text">Just my phone.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="500"
-            data-aos-duration="1200"
-          >
-            <div class="card cardgallery">
-              <img
-                src="./img/team.jpg"
-                class="card-img-top img-fluid gallery-item"
-                alt="Gambar5"
-              />
-              <div class="card-body">
-                <p class="card-text">Me and my friend 😁.</p>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam9.JPG"
+                  class="card-img-top gallery-item"
+                  alt="Gambar4"
+                />
+                <div class="card-body">
+                  <p class="card-text">Serem yah.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="600"
-            data-aos-duration="1200"
-          >
-            <div class="card cardgallery">
-              <img
-                src="./img/borobudur.jpg"
-                class="card-img-top gallery-item"
-                alt="Gambar5"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Pic from
-                  <a
-                    class="link-danger"
-                    href="https://www.google.com/search?sxsrf=APwXEdfjRluYqERb8ZjFvCcWkIrXC4REAA:1679840194490&q=Candi+Borobudur&si=AMnBZoFJ1XthBGgdJoWC8jXMdOYx7iQwytbFzFMBZx3SnbwThVpTqx78t1JTnOozbhJ480VML9F0tjzH9lndrXjT4ltlT8j4oXF0oICQPlpbfecaxaOu7y0PF4UF1K7uVwAWwPU1NKCIYw1WpizHToBmydUlr1rGG8HCJ9z7I7hJtSRnxcW0jkLW-trQwaxD7OPjULIAhkkMHTzlG0A3KkB_JlUc2KD62w%3D%3D&sa=X&ved=2ahUKEwjNpcmw5Pn9AhVKRfEDHU6ABKoQ6RN6BAhJEAE&biw=1920&bih=929&dpr=1"
-                    title="Candi Borobudur"
-                    >📍Candi Borobudur.
-                  </a>
-                </p>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam1.jpg"
+                  class="card-img-top gallery-item"
+                  alt="Gambar5"
+                />
+                <div class="card-body">
+                  <p class="card-text">Random Porsche.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-md-4 mb-3"
-            data-aos="flip-down"
-            data-aos-delay="700"
-            data-aos-duration="1200"
-          >
-            <div class="card cardgallery">
-              <iframe
-                src="https://www.youtube.com/embed/chwcxlLueTs"
-                height="262rem"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="card-body">
-                <p class="card-text">
-                  <a title="Candi Borobudur">Estetek gabut bts tugas video.</a>
-                </p>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam7.JPG"
+                  class="card-img-top gallery-item"
+                  alt="Gambar5"
+                />
+                <div class="card-body">
+                  <p class="card-text">Pantai Pagi.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card cardgallery">
+                <img
+                  src="./img/cam8.ARW"
+                  class="card-img-top gallery-item"
+                  alt="Gambar5"
+                />
+                <div class="card-body">
+                  <p class="card-text">flower (RAW)</p>
+                </div>
               </div>
             </div>
           </div>
@@ -568,8 +656,8 @@
     });
   </script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
   <script>
     gsap.registerPlugin(TextPlugin);
     gsap.to(".NamaPanjang", {
