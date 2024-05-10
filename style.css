@@ -228,3 +228,26 @@ section {
   background: red;
   border-radius: 10px;
 }
+
+.img-box {
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center images inside the box */
+}
+
+.bx2 {
+  display: none;
+}
+
+.selectg1 {
+  background-color: #86b4ff;
+  color: #ffffff;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.selectg2 {
+  background-color: #86b4ff;
+  color: #ffffff;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
