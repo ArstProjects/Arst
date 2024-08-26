@@ -239,6 +239,7 @@ section {
 }
 
 .selectg1 {
+  margin: auto;
   background-color: #86b4ff;
   color: #ffffff;
   border-top-left-radius: 100px;
@@ -246,8 +247,15 @@ section {
 }
 
 .selectg2 {
+  margin: auto;
   background-color: #86b4ff;
   color: #ffffff;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
+}
+
+.namacar {
+  background-color: #d0f403;
+  padding: 5px;
+  border-radius: 15px;
 }
