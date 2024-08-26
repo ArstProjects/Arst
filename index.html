@@ -85,7 +85,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link bi bi-images" href="#gallery"> | gallery</a>
+              <a class="nav-link bi bi-images" href="#Gallery"> | gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link bi bi-controller" href="games.html">
@@ -168,9 +168,7 @@
         style="color: rgb(118, 255, 102)"
       >
         LATEST UPDATE 10/05/2024</strong
-      >
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
           fill-opacity="1"
@@ -194,26 +192,28 @@
             </h2>
           </div>
         </div>
-        <div class="row justify-content-center text-center">
-          <div
-            class="col-3 text-center selectg1"
-            style="cursor: pointer; font-size: 3rem"
-          >
-            <i class="bi bi-phone" onclick="toggleImages(1)"><h5>PHONE</h5></i>
-          </div>
-          <div
-            class="col-3 text-center selectg2"
-            style="cursor: pointer; font-size: 3rem"
-          >
-            <i class="bi bi-camera2" onclick="toggleImages(2)"
-              ><h5>CAMERA</h5></i
+        <div class="container text-center">
+          <div class="row">
+            <div
+              class="col text-center selectg1"
+              style="cursor: pointer; font-size: 3rem"
+              onclick="toggleImages(1)"
             >
+              <i class="bi bi-shuffle"><h5>RANDOM</h5></i>
+            </div>
+            <div
+              class="col text-center selectg2"
+              style="cursor: pointer; font-size: 3rem"
+              onclick="toggleImages(2)"
+            >
+              <i class="bi bi-camera2"><h5>CAMERA</h5></i>
+            </div>
           </div>
         </div>
         <br /><br />
         <div class="img-box bx1" id="img-box-1">
           <div class="row justify-content-center">
-            <h3>Using Phone : Galaxy S21 FE</h3>
+            <h3>Random Photo</h3>
             <i class="bi bi-arrow-down-short" style="font-size: 3rem"></i>
             <div class="col-md-3 mb-3">
               <div class="card cardgallery">
@@ -352,7 +352,7 @@
             <div class="col-md-3 mb-3">
               <div class="card cardgallery">
                 <img
-                  src="./img/cam4.JPG"
+                  src="./img/cam4.jpg"
                   class="card-img-top gallery-item"
                   alt="Gambar3"
                 />
